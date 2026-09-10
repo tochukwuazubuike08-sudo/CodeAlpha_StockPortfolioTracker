@@ -22,4 +22,31 @@ The program asks the user to pick a stock (from a small predefined list) and a q
    python stock_portfolio_tracker.py
 3. Follow the prompts:
    - Enter a stock symbol (AAPL, TSLA, or MSFT)
-   -
+   - Enter a quantity
+   - Repeat as many times as you like
+   - Type "no" when asked if you want to check another stock, to see your session summary
+
+## Example
+
+Enter your preferred stock: 
+AAPL ($180), TSLA ($250), MSFT ($420): aapl
+Enter the quantity to check: 12
+Total investment value: $ 2160
+Do you want to check another stock? (yes/no): no
+Total invested this session: $2160
+
+Each run appends to `portfolio_results.txt`, so your history builds up over time rather than being overwritten.
+
+## Concepts used
+
+- Dictionaries (stock_prices) for storing hardcoded stock data
+- while loops for repeated input and session control
+- if / elif / else for branching logic
+- try / except for handling invalid number input
+- File handling (with open(...) as file:, append mode, .write())
+- The datetime module for timestamping log entries
+- String building and formatting (+, str(), .join(), list .append())
+
+## Notes
+
+This project was built incrementally while learning — starting from basic input/output and file writing, then layering on error handling, timestamps, a dynamic stock list, and a session summary.
