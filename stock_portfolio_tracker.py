@@ -6,7 +6,7 @@ stock_prices = {
     "MSFT": 420
 }
 session_total = 0
-stock_list_items = []                          # ← REPLACES the old stock_list line
+stock_list_items = []                          
 for stock_name in stock_prices:
     stock_list_items.append(stock_name + " ($" + str(stock_prices[stock_name]) + ")")
 
